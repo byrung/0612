@@ -7,18 +7,17 @@
     <script src="https://code.jquery.com/jquery-3.7.0.js"></script>
     <script>
         $(document).ready(function (){
-            $('#box').css({
-                width:100,
-                height: 100,
-                background:'red'
-            }).animate({
-                width:300,
-                opacity: 0.5,
-            }, 500);
+           $('button').click(function(){
+            $('.page').fadeToggle('slow');
+           })
         });
     </script>
 </head>
 <body>
-    <div id = "box"></div>
+    <button>Toggle Show</button>
+    <div class="page">
+        <h1>Lorem ipsum dolor sit amet</h1>
+        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Laudantium officiis impedit nam dolor ipsa aperiam earum praesentium quo dolores alias in, deleniti accusamus eius ratione commodi veritatis itaque facere magni.</p>
+    </div>
 </body>
 </html>
